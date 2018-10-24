@@ -77,11 +77,13 @@ CREATE TABLE `contract` (
 ## 2. Create the S3 bucket to hold your contract files.
 In this experiment, I also create a subfolder named "contract" as prefix. Please be reminded that you are supposed to change the source code if you modify the folder hierarchy in the S3 bucket.
 
-## 3. Create a Lambda function and attach the role with IAM policy created above
+## 3. Fill in the required arguments of the DB connection in druid.properties
+
+## 4. Create a Lambda function and attach the role with IAM policy created above
 https://docs.aws.amazon.com/zh_cn/toolkit-for-eclipse/v1/user-guide/lambda-tutorial.html
 
-## 4. Use maven to pacakge the source code and upload to the Lambda function you created in step 3
+## 5. Use maven to pacakge the source code and upload to the Lambda function you created in step 3
 https://docs.aws.amazon.com/zh_cn/lambda/latest/dg/java-create-jar-pkg-maven-no-ide.html
 https://docs.aws.amazon.com/zh_cn/lambda/latest/dg/java-create-jar-pkg-maven-and-eclipse.htmlhttps://docs.aws.amazon.com/zh_cn/lambda/latest/dg/java-create-jar-pkg-maven-and-eclipse.html
 
-## 5. Then you could upload the contract files to S3 bucket to see the results.
+## 6. Then you could upload the contract files to S3 bucket to see the results.
